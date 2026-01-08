@@ -1,2 +1,3 @@
-# BackPropagation
-backpropagation in neural networks
+In this project, we take the two-layer MLP with Batch Normalization from the Andrej Karpathy and manually implement backpropagation through the entire network—without using PyTorch autograd’s loss.backward(). We explicitly compute gradients through the cross-entropy loss, second linear layer, tanh activation, batch normalization, first linear layer, and the embedding table.
+
+This process builds a strong, intuitive understanding of how gradients flow backward through a computation graph at the level of efficient tensor operations, rather than individual scalars as in micrograd. The goal is to develop deeper intuition and practical competence in how neural networks are optimized, empowering you to more confidently debug, extend, and innovate on modern deep learning models.
